@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端的视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘首页</title>
+    <!-- 移入站点图标 -->
+    <link rel="stylesheet" href="images/favicon.ico">
+    <!-- 引入mui样式 有基础样式和组件 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <!-- 页面图标 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet/less" href="less/index.less">
+	<!-- 4. 引入less的编译器文件less.js 这个less.js是需要编译Less来加载页面样式 优先引入让样式能够正常显示 用来编译less文件-->
+	<script src="lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <h4>乐淘云购</h4>
+        <a href="#" class="fa fa-search" aria-hidden="true"></a>
+    </header>
+    <!-- 轮播图 -->
+    <section id="slide">
+        <div class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!--支持循环，需要重复图片节点-->
+                    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/banner4.png" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="images/banner1.png" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="images/banner2.png" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="images/banner3.png" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="images/banner4.png" /></a></div>
+                    <!--支持循环，需要重复图片节点-->
+                    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/banner1.png" /></a></div>
+                </div>
+                <!-- 小点点 -->
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                </div>
+            </div>
+
+    </section>
+    <!-- 分类 导航区 -->
+    <nav id="nav"></nav>
+    <!-- 广告区 -->
+    <section id="banner"></section>
+    <!-- 品牌区 -->
+    <section id="brand"></section>
+    <!-- 运动生活区 -->
+    <section id="sport"></section>
+    <!-- 女士专区 -->
+    <section id="women"></section>
+    <!-- 男士专区 -->
+    <section id="man"></section>
+    <!-- 底部导航 -->
+    <footer id="footer"></footer>
+
+
+
+    <!-- mui的js  轮播图 滑动之类的 -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入获取元素要使用的zepto -->
+    <script  src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入模板引擎的js 用来渲染页面 -->
+    <script  src="lib/artTemplate/template-native.js"></script>
+    <!-- 引入自己的js  -->
+    <script  src="js/index.js"></script>
+</body>
+</html>
